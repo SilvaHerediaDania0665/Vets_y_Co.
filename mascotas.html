@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mascotas - Vets & Co.</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #9EC7D9;
+    margin: 0px;
+    margin-top: 120px;
+    font-family: Verdana, Century Gothic;
+}
+
+header {
+    background-color: #FDFF85;
+    padding: 30px;
+
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Century Gothic;
+    color: #FFC34F;
+
+    clip-path: ellipse(70% 100% at 50% 0%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    z-index: 1000;
+}
+
+header img {
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    transform: translateY(-50%);
+    width: 90px;
+}
+
+nav { 
+    background-color: #86C2D9; 
+    padding-top: 50px; 
+    padding-bottom: 20px;
+    text-align: center;  
+    position: fixed; 
+    top: 83px; 
+    clip-path: ellipse(65% 100% at 50% 0%);
+    width: 100%;  
+    z-index: 999; 
+
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 30px;
+    font-size: 18px;
+    font-family: Century Gothic;
+    font-weight: bold;
+}
+
+.adecoracion {
+    background-color: #FFFFFF;
+    padding: 330px;
+    margin-top: 200px;
+    clip-path: ellipse(70% 100% at 50% 100%);
+}
+
+.adecoracion f {
+    color: #2F4B52;
+    font-size: 25px;
+    font-family: Century Gothic;
+    font-weight: bold;
+    position: absolute;
+    top: 300px;
+    left: 520px;
+}
+
+.bdecoracion {
+    background-color: #FFFFFF;
+    padding: 330px;
+    margin-top: 0px;
+    clip-path: ellipse(70% 100% at 50% 0%);
+}
+
+table {
+    position: absolute;
+    top: 400px;
+    left: 120px;
+    z-index: 99;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #9EC7D9;
+    font-family: Century Gothic;
+    font-weight: bold;
+    width: 120px;
+    height: 80px;
+    color: #2F4B52;
+}
+
+td {
+    background-color: #DBDBDB;
+    font-family: Century Gothic;
+    width: 120px;
+    height: 80px;
+    color: #000000;
+}
+
+</style>
+</head>
+
+<body>
+
+    <header>
+      <img src="Logo_VyC.png" alt="logo">
+      <span>Vets & Co.</span>
+    </header>
+
+    <nav>
+      <a href="file:///D:/4to%20Semestre/Meza/Vets%20y%20Co/Paginas/index.html">Inicio</a>
+      <a href="file:///D:/4to%20Semestre/Meza/Vets%20y%20Co/Paginas/mascotas.html">Mascotas</a>
+      <a href="file:///D:/4to%20Semestre/Meza/Vets%20y%20Co/Paginas/due%C3%B1os.html">Dueños</a>
+      <a href="file:///D:/4to%20Semestre/Meza/Vets%20y%20Co/Paginas/historial%20medico.html">Historial Médico</a>
+      <a href="file:///D:/4to%20Semestre/Meza/Vets%20y%20Co/Paginas/empleados.html">Empleados</a>
+      <a href="file:///D:/4to%20Semestre/Meza/Vets%20y%20Co/Paginas/inventario.html">Inventario</a>
+    </nav>
+
+  <table>
+
+    <thead>
+      <tr>
+        <th>ID Mascota</th>
+        <th>Nombre de la Mascota</th>
+        <th>Nombre del Dueño</th>
+        <th>Número de Microchip</th>
+        <th>Especie</th>
+        <th>Raza</th>
+        <th>Edad</th>
+        <th>Peso</th>
+        <th>Sexo</th>
+      </tr>
+    </thead>
+   
+    <tbody>
+
+      <tr>
+        <td>001</td>
+        <td>Molly</td>
+        <td>Irais Silva</td>
+        <td>-</td>
+        <td>Gato</td>
+        <td>SRD</td>
+        <td>2 años</td>
+        <td>5.2 kg</td>
+        <td>Hembra</td>
+      </tr>
+
+      <tr>
+        <td>002</td>
+        <td>Lottie</td>
+        <td>Luciana Mendoza</td>
+        <td>-</td>
+        <td>Perro</td>
+        <td>Bichón Maltes</td>
+        <td>5 años</td>
+        <td>2.7 kg</td>
+        <td>Hembra</td>
+      </tr>
+
+      <tr>
+        <td>003</td>
+        <td>Chocolate
+        <td>Arely Vallejo</td>
+        <td>-</td>
+        <td>Perro</td>
+        <td>SRD</td>
+        <td>3 años</td>
+        <td>25 kg</td>
+        <td>Macho</td>
+      </tr>
+
+      <tr>
+        <td>004</td>
+        <td>Haru</td>
+        <td>Perla Heredia</td>
+        <td>0084679123</td>
+        <td>Gato</td>
+        <td>SRD</td>
+        <td>1 año</td>
+        <td>6.3 kg</td>
+        <td>Hembra</td>
+      </tr>
+
+      <tr>
+        <td>005</td>
+        <td>Melina</td>
+        <td>Edgar Silva</td>
+        <td>1837467560</td>
+        <td>Perro</td>
+        <td>SRD</td>
+        <td>8 años</td>
+        <td>25.7 kg</td>
+        <td>Hembra</td>
+      </tr>
+
+      <tr>
+        <td>006</td>
+        <td>Kira</td>
+        <td>Saúl Mendez</td>
+        <td>1143669400</td>
+        <td>Perro</td>
+        <td>Shih Tzu</td>
+        <td>4 años</td> 
+        <td>6 kg</td>
+        <td>Hembra</td>
+      </tr>
+
+      <tr>
+        <td>007</td>
+        <td>Willow</td>
+        <td>Claudia Lozadas</td>
+        <td>7526410011</td>
+        <td>Gato</td>
+        <td>Ragdoll</td>
+        <td>1 año</td>
+        <td>4.1 kg</td>
+        <td>Hembra</td>
+      </tr>
+
+      <tr>
+        <td>008</td>
+        <td>Loki</td>
+        <td>Alejandro Jimenez</td>
+        <td>-</td>
+        <td>Perro</td>
+        <td>Pastor Belga</td>
+        <td>2 años</td>
+        <td>30 kg</td>
+        <td>Macho</td>
+      </tr>
+
+      <tr>
+        <td>009</td>
+        <td>Coco</td>
+        <td>Luis Contreras</td>
+        <td>-</td>
+        <td>Perro</td>
+        <td>Pomerania</td>
+        <td>9 meses</td>
+        <td>2.2 kg</td>
+        <td>Hembra</td>
+      </tr>
+
+      <tr>
+        <td>010</td>
+        <td>Foxy</td>
+        <td>Victor Castro</td>
+        <td>-</td>
+        <td>Perro</td>
+        <td>Border Colie</td>
+        <td>5 años</td>
+        <td>23.1 kg</td>
+        <td>Macho</td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+  <main>
+
+    <section class="adecoracion">
+      <f>Registros de las Mascotas</f>
+    </section>
+
+    <section class="bdecoracion">
+    </section>
+    
+  </main>
+
+</body>
+</html> 

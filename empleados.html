@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Empleados - Vets & Co.</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #9EC7D9;
+    margin: 0px;
+    margin-top: 120px;
+    font-family: Verdana, Century Gothic;
+}
+
+header {
+    background-color: #FDFF85;
+    padding: 30px;
+
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Century Gothic;
+    color: #FFC34F;
+
+    clip-path: ellipse(70% 100% at 50% 0%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    z-index: 1000;
+}
+
+header img {
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    transform: translateY(-50%);
+    width: 90px;
+}
+
+nav { 
+    background-color: #86C2D9; 
+    padding-top: 50px; 
+    padding-bottom: 20px;
+    text-align: center;  
+    position: fixed; 
+    top: 83px; 
+    clip-path: ellipse(65% 100% at 50% 0%);
+    width: 100%;  
+    z-index: 999; 
+
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 30px;
+    font-size: 18px;
+    font-family: Century Gothic;
+    font-weight: bold;
+}
+
+.adecoracion {
+    background-color: #FFFFFF;
+    padding: 330px;
+    margin-top: 200px;
+    clip-path: ellipse(70% 100% at 50% 100%);
+}
+
+.adecoracion f {
+    color: #2F4B52;
+    font-size: 25px;
+    font-family: Century Gothic;
+    font-weight: bold;
+    position: absolute;
+    top: 300px;
+    left: 550px;
+}
+
+.bdecoracion {
+    background-color: #FFFFFF;
+    padding: 330px;
+    margin-top: 0px;
+    clip-path: ellipse(70% 100% at 50% 0%);
+}
+
+table {
+    position: absolute;
+    top: 400px;
+    left: 50px;
+    z-index: 99;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #9EC7D9;
+    font-family: Century Gothic;
+    font-weight: bold;
+    width: 145px;
+    height: 80px;
+    color: #2F4B52;
+}
+
+td {
+    background-color: #DBDBDB;
+    font-family: Century Gothic;
+    width: 145px;
+    height: 80px;
+    color: #000000;
+}
+
+</style>
+</head>
+
+<body>
+
+    <header>
+      <img src="Logo_VyC.png" alt="logo">
+      <span>Vets & Co.</span>
+    </header>
+
+    <nav>
+      <a href="file:///D:/4to%20Semestre/Meza/Vets%20y%20Co/Paginas/index.html">Inicio</a>
+      <a href="file:///D:/4to%20Semestre/Meza/Vets%20y%20Co/Paginas/mascotas.html">Mascotas</a>
+      <a href="file:///D:/4to%20Semestre/Meza/Vets%20y%20Co/Paginas/due%C3%B1os.html">Dueños</a>
+      <a href="file:///D:/4to%20Semestre/Meza/Vets%20y%20Co/Paginas/historial%20medico.html">Historial Médico</a>
+      <a href="file:///D:/4to%20Semestre/Meza/Vets%20y%20Co/Paginas/empleados.html">Empleados</a>
+      <a href="file:///D:/4to%20Semestre/Meza/Vets%20y%20Co/Paginas/inventario.html">Inventario</a>
+    </nav>
+
+  <table>
+
+    <thead>
+      <tr>
+        <th>ID Empleado</th>
+        <th>Nombre del Empleado</th>
+        <th>Cargo</th>
+        <th>Teléfono</th>
+        <th>Sueldo</th>
+        <th>Estatus</th>
+        <th>RFC</th>
+        <th>Dirección</th>
+        <th>Correo</th>
+      </tr>
+    </thead>
+   
+    <tbody>
+
+      <tr>
+        <td>301</td>
+        <td>Andrea Lopez Martinez</td>
+        <td>Médico veterinario</td>
+        <td>656 821 7390</td>
+        <td>$18,000 MXN</td>
+        <td>Activo</td>
+        <td>LOMA9203151XH</td>
+        <td>Av. Magnolia #245</td>
+        <td>lopez@vet.mc
+      </tr>
+
+      <tr>
+        <td>302</td>
+        <td>Carlos Mendez Ruiz</td>
+        <td>Cirujano veterinario</td>
+        <td>553 917 2284</td>
+        <td>$22,000 MXN</td> 
+        <td>Activo</td>
+        <td>MERC880712MJZ</td>
+        <td>Calle Roble #118</td>
+        <td>carlm@vet.mx</td>
+      </tr>
+
+      <tr>
+        <td>303</td>
+        <td>Fernando Castillo Vega</td>
+        <td>Auxuliar veterinario</td>
+        <td>656 743 9912</td>
+        <td>$9,500 MXN</td>
+        <td>Activo</td>
+        <td>CAVF990824ZNA</td>
+        <td>Av. Patria #560</td>
+        <td>vega@vet.mx</td>
+      </tr>
+
+      <tr>
+        <td>304</td>
+        <td>Luis Hernandez Soto</td>
+        <td>Recepcionista</td>
+        <td>556 123 4501</td>
+        <td>$8,000 MXN</td>
+        <td>Activo</td>
+        <td>HESL010220J1A</td>
+        <td>Calle Nispero #332</td>
+        <td>soto@vet.mx</td>
+      </tr>
+
+      <tr>
+        <td>305</td>
+        <td>Mariana Torres Aguilar</td>
+        <td>Groomer</td>
+        <td>656 452 1187</td>
+        <td>$10,200 MXN</td>
+        <td>Inactivo</td>
+        <td>TOAM950617D10</td>
+        <td>Av. Tepeyac #890</td>
+        <td>mari@vet.mx</td>
+      </tr>
+
+      <tr>
+        <td>306</td>
+        <td>Jorge Ramirez Ponce</td>
+        <td>Médico veterinario</td>
+        <td>656 321 6645</td>
+        <td>$17,00 MXN</td>
+        <td>Activo</td>
+        <td>RAPJ900411FAB</td>
+        <td>Calle Cedro #214</td>
+        <td>ponc@vet.mx</td>
+      </tr>
+
+      <tr>
+        <td>307</td>
+        <td>Daniel Salinas</td>
+        <td>Auxiliar labotarorio</td>
+        <td>656 182 5503</td>
+        <td>$11,000 MXN</td>
+        <td>Activo</td>
+        <td>CUSD980129ERN</td>
+        <td>Calle Naciones #1540
+        <td>dans@vet.mx</td>
+      </tr>
+
+      <tr>
+        <td>308</td>
+        <td>Ricardo Gomez Luna</td>
+        <td>Administrador</td>
+        <td>550 443 3210</td>
+        <td>$20,00 MXN</td>
+        <td>Activo</td>
+        <td>GOLR870923QRN</td>
+        <td>Calle Primavera #8</td>
+        <td>gomz@vet.mx</td>
+      </tr>
+
+      <tr>
+        <td>309</td>
+        <td>Paola Jimenez Duarte</td>
+        <td>Recepcionista</td>
+        <td>656 562 6719</td>
+        <td>$8,300 MXN</td>
+        <td>Inactivo</td>
+        <td>JIDP000514LY7</td>
+        <td>Calle Azalea #401</td>
+        <td>pao@vet.mx</td>
+      </tr>
+
+      <tr>
+        <td>310</td>
+        <td>Esteban Morales</td>
+        <td>Técnico en imagen</td>
+        <td>656 893 1142</td>
+        <td>$13,500 MXN</td>
+        <td>Activo</td>
+        <td>MOCE930702ROD</td>
+        <td>Av. Guadalupe #1123</td>
+        <td>esteb@vet.mx</td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+  <main>
+
+    <section class="adecoracion">
+      <f>Registros de los Empleados</f>
+    </section>
+
+    <section class="bdecoracion">
+    </section>
+    
+  </main>
+
+</body>
+</html> 

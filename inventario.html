@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inventario - Vets & Co.</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #9EC7D9;
+    margin: 0px;
+    margin-top: 120px;
+    font-family: Verdana, Century Gothic;
+}
+
+header {
+    background-color: #FDFF85;
+    padding: 30px;
+
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Century Gothic;
+    color: #FFC34F;
+
+    clip-path: ellipse(70% 100% at 50% 0%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    z-index: 1000;
+}
+
+header img {
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    transform: translateY(-50%);
+    width: 90px;
+}
+
+nav { 
+    background-color: #86C2D9; 
+    padding-top: 50px; 
+    padding-bottom: 20px;
+    text-align: center;  
+    position: fixed; 
+    top: 83px; 
+    clip-path: ellipse(65% 100% at 50% 0%);
+    width: 100%;  
+    z-index: 999; 
+
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 30px;
+    font-size: 18px;
+    font-family: Century Gothic;
+    font-weight: bold;
+}
+
+.adecoracion {
+    background-color: #FFFFFF;
+    padding: 330px;
+    margin-top: 200px;
+    clip-path: ellipse(70% 100% at 50% 100%);
+}
+
+.adecoracion f {
+    color: #2F4B52;
+    font-size: 25px;
+    font-family: Century Gothic;
+    font-weight: bold;
+    position: absolute;
+    top: 300px;
+    left: 520px;
+}
+
+.bdecoracion {
+    background-color: #FFFFFF;
+    padding: 330px;
+    margin-top: 0px;
+    clip-path: ellipse(70% 100% at 50% 0%);
+}
+
+table {
+    position: absolute;
+    top: 400px;
+    left: 50px;
+    z-index: 99;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #9EC7D9;
+    font-family: Century Gothic;
+    font-weight: bold;
+    width: 145px;
+    height: 80px;
+    color: #2F4B52;
+}
+
+td {
+    background-color: #DBDBDB;
+    font-family: Century Gothic;
+    width: 145px;
+    height: 80px;
+    color: #000000;
+}
+
+</style>
+</head>
+
+<body>
+
+    <header>
+      <img src="Logo_VyC.png" alt="logo">
+      <span>Vets & Co.</span>
+    </header>
+
+    <nav>
+      <a href="file:///D:/4to%20Semestre/Meza/Vets%20y%20Co/Paginas/index.html">Inicio</a>
+      <a href="file:///D:/4to%20Semestre/Meza/Vets%20y%20Co/Paginas/mascotas.html">Mascotas</a>
+      <a href="file:///D:/4to%20Semestre/Meza/Vets%20y%20Co/Paginas/due%C3%B1os.html">Dueños</a>
+      <a href="file:///D:/4to%20Semestre/Meza/Vets%20y%20Co/Paginas/historial%20medico.html">Historial Médico</a>
+      <a href="file:///D:/4to%20Semestre/Meza/Vets%20y%20Co/Paginas/empleados.html">Empleados</a>
+      <a href="file:///D:/4to%20Semestre/Meza/Vets%20y%20Co/Paginas/inventario.html">Inventario</a>
+    </nav>
+
+  <table>
+
+    <thead>
+      <tr>
+        <th>ID Producto</th>
+        <th>Nombre del Producto</th>
+        <th>Categoría</th>
+        <th>Cantidad Disponible</th>
+        <th>Precio Unitario</th>
+        <th>Proveedor</th>
+        <th>Contacto Proveedor</th>
+        <th>Ubicación Producto</th>
+        <th>Fecha de Caducidad</th>
+      </tr>
+    </thead>
+   
+    <tbody>
+
+      <tr>
+        <td>401</td>
+        <td>Amoxicilina 250mg</td>
+        <td>Medicamento</td>
+        <td>120</td>
+        <td>$18 MXN</td>
+        <td>ZooFarma S.A.</td>
+        <td>553 345 7789</td>
+        <td>Almacén - Estante 1</td>
+        <td>02/2027</td>
+      </tr>
+
+      <tr>
+        <td>402</td>
+        <td>Meloxicam 1.5 mg/ml</td>
+        <td>Medicamento</td>
+        <td>18</td>
+        <td>$210 MXN</td>
+        <td>VetLife México</td>
+        <td>558 923 1145</td>
+        <td>Almacén - Estante 2</td>
+        <td>05/2029</td>
+      </tr>
+
+      <tr>
+        <td>403</td>
+        <td>Vacuna Antirrabica 5ml</td>
+        <td>Vacuna</td>
+        <td>25</td>
+        <td>$150 MXN</td>
+        <td>BioAnimal Labs</td>
+        <td>554 412 9902</td>
+        <td>Refrigerador clínico</td>
+        <td>06/2028</td>
+      </tr>
+
+      <tr>
+        <td>404</td>
+        <td>Jeringas 10ml</td>
+        <td>Material Médico</td>
+        <td>40</td>
+        <td>$12 MXN</td>
+        <td>MediSum Disreibuciones</td>
+        <td>556 632 5578</td>
+        <td>Almacén general</td>
+        <td>10/2027</td>
+      </tr>
+
+      <tr>
+        <td>405</td>
+        <td>Guantes de látex</td>
+        <td>Material médico</td>
+        <td>8</td>
+        <td>$29 MXN</td>
+        <td>SafeVet Supplies</td>
+        <td>557 210 3344</td>
+        <td>Almacén general</td>
+        <td>04/2030</td>
+      </tr>
+
+      <tr>
+        <td>406</td>
+        <td>Suero fisiológico</td>
+        <td>Insumo médico</td>
+        <td>5</td>
+        <td>$45 MXN</td>
+        <td>FarmaVet Distribuciones</td>
+        <td>558 834 2210</td>
+        <td>Refrigerador clínico</td>
+        <td>09/2030</td>
+      </tr>
+
+      <tr>
+        <td>407</td>
+        <td>Alimento para Perro 20kg</td>
+        <td>Alimento</td>
+        <td>12</td>
+        <td>$950 MXN</td>
+        <td>NutriVet México</td>
+        <td>559 951 7143</td>
+        <td>Bodega alimentos</td>
+        <td>11/2029</td>
+      </tr>
+
+      <tr>
+        <td>408</td>
+        <td>Collar isabelino talla M</td>
+        <td>Accesorio médico</td>
+        <td>0</td>
+        <td>$95 MXN</td>
+        <td>PetCare Supplies</td>
+        <td>556 124 8890</td>
+        <td>Almacén general</td>
+        <td>-</td>
+      </tr>
+
+      <tr>
+        <td>409</td>
+        <td>Termometro digital</td>
+        <td>Equipo médico</td>
+        <td>2</td>
+        <td>$350 MXN </td>
+        <td>MediVet Equipos</td>
+        <td>557 788 3322</td>
+        <td>Consultorio 1</td>
+        <td>-</td>
+      </tr>
+
+      <tr>
+        <td>410</td>
+        <td>Ketamina 100mg</td>
+        <td>Anestésico</td>
+        <td>6</td>
+        <td>$480 MXN</td>
+        <td>MediVet Equipos</td>
+        <td>557 788 3322</td>
+        <td>Gabinete controlado</td>
+        <td>08/2028</td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+  <main>
+
+    <section class="adecoracion">
+      <f>Registros de los Productos</f>
+    </section>
+
+    <section class="bdecoracion">
+    </section>
+    
+  </main>
+
+</body>
+</html> 

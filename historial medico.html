@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Historial Médico - Vets & Co.</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #9EC7D9;
+    margin: 0px;
+    margin-top: 120px;
+    font-family: Verdana, Century Gothic;
+}
+
+header {
+    background-color: #FDFF85;
+    padding: 30px;
+
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Century Gothic;
+    color: #FFC34F;
+
+    clip-path: ellipse(70% 100% at 50% 0%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    z-index: 1000;
+}
+
+header img {
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    transform: translateY(-50%);
+    width: 90px;
+}
+
+nav { 
+    background-color: #86C2D9; 
+    padding-top: 50px; 
+    padding-bottom: 20px;
+    text-align: center;  
+    position: fixed; 
+    top: 83px; 
+    clip-path: ellipse(65% 100% at 50% 0%);
+    width: 100%;  
+    z-index: 999; 
+
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 30px;
+    font-size: 18px;
+    font-family: Century Gothic;
+    font-weight: bold;
+}
+
+.adecoracion {
+    background-color: #FFFFFF;
+    padding: 330px;
+    margin-top: 200px;
+    clip-path: ellipse(70% 100% at 50% 100%);
+}
+
+.adecoracion f {
+    color: #2F4B52;
+    font-size: 25px;
+    font-family: Century Gothic;
+    font-weight: bold;
+    position: absolute;
+    top: 300px;
+    left: 550px;
+}
+
+.bdecoracion {
+    background-color: #FFFFFF;
+    padding: 330px;
+    margin-top: 0px;
+    clip-path: ellipse(70% 100% at 50% 0%);
+}
+
+table {
+    position: absolute;
+    top: 400px;
+    left: 140px;
+    z-index: 99;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #9EC7D9;
+    font-family: Century Gothic;
+    font-weight: bold;
+    width: 140px;
+    height: 80px;
+    color: #2F4B52;
+}
+
+td {
+    background-color: #DBDBDB;
+    font-family: Century Gothic;
+    width: 140px;
+    height: 80px;
+    color: #000000;
+}
+
+</style>
+</head>
+
+<body>
+
+    <header>
+      <img src="Logo_VyC.png" alt="logo">
+      <span>Vets & Co.</span>
+    </header>
+
+    <nav>
+      <a href="file:///D:/4to%20Semestre/Meza/Vets%20y%20Co/Paginas/index.html">Inicio</a>
+      <a href="file:///D:/4to%20Semestre/Meza/Vets%20y%20Co/Paginas/mascotas.html">Mascotas</a>
+      <a href="file:///D:/4to%20Semestre/Meza/Vets%20y%20Co/Paginas/due%C3%B1os.html">Dueños</a>
+      <a href="file:///D:/4to%20Semestre/Meza/Vets%20y%20Co/Paginas/historial%20medico.html">Historial Médico</a>
+      <a href="file:///D:/4to%20Semestre/Meza/Vets%20y%20Co/Paginas/empleados.html">Empleados</a>
+      <a href="file:///D:/4to%20Semestre/Meza/Vets%20y%20Co/Paginas/inventario.html">Inventario</a>
+    </nav>
+
+  <table>
+
+    <thead>
+      <tr>
+        <th>ID Historial</th>
+        <th>Nombre de la Mascota</th>
+        <th>Enfermedades</th>
+        <th>Cirugías</th>
+        <th>Alergías</th>
+        <th>Medicación Actual</th>
+        <th>Vacunas</th>
+        <th>Desparacitación</th>
+      </tr>
+    </thead>
+   
+    <tbody>
+
+      <tr>
+        <td>201</td>
+        <td>Molly</td>
+        <td>Insuficiencia renal</td>
+        <td>Esterilización (2024)</td>
+        <td>-</td>
+        <td>Dieta terapéutica</td>
+        <td>Vigentes (09/2025)</td>
+        <td>01/2026</td>
+      </tr>
+
+      <tr>
+        <td>202</td>
+        <td>Lottie</td>
+        <td>Parvovirus (2023, resuelta)</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Multiple y rabia (04/2025)</td>
+        <td>02/2026</td>
+      </tr>
+
+      <tr>
+        <td>203</td>
+        <td>Chocolate</td>
+        <td>Fermatitis atópica</td>
+        <td>Esterilización (2025)</td>
+        <td>Pulgas</td>
+        <td>Oclacitinib c/24h</td>
+        <td>Vigentes (03/2025)</td>
+        <td>01/2026</td>
+      </tr>
+
+      <tr>
+        <td>204</td>
+        <td>Haru</td>
+        <td>Asma felina</td>
+        <td>-</td>
+        <td>Polvo ambiental</td>
+        <td>Cotacoide c/24h</td>
+        <td>Rabia (08/2025)</td>
+        <td>01/2026</td>
+      </tr>
+
+      <tr>
+        <td>205</td>
+        <td>Melina</td>
+        <td>Obesidad Grado I</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Dieta de control renal</td>
+        <td>Vigentes (06/2026)</td>
+        <td>
+      </tr>
+
+      <tr>
+        <td>206</td>
+        <td>Kira</td>
+        <td>Ehrlichiosis (2024, tratada)</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Vigentes (07/2025)</td>
+        <td>01/2026</td>
+      </tr>
+
+      <tr>
+        <td>207</td>
+        <td>Willow</td>
+        <td>Gingivitis crónica</td>
+        <td>Limpieza dental (2025)</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Triple felina (05/2025)</td>
+        <td>12/2025</td>
+      </tr>
+
+      <tr>
+        <td>208</td>
+        <td>Loki</td>
+        <td>Diabetes mellitus</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Insulina c/12h</td>
+        <td>Vigentes (02/2026)</td>
+        <td>02/2026</td>
+      </tr>
+
+      <tr>
+        <td>209</td>
+        <td>Coco</td>
+        <td>Cardiopatía leve</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Pimobendan c/12h</td>
+        <td>Vigentes (10/2025)</td>
+        <td>01/2025</td>
+      </tr>
+
+      <tr>
+        <td>210</td>
+        <td>Foxy</td>
+        <td>Otitis recurrente</td>
+        <td>Castración (2024)</td>
+        <td>Alimento con pollo</td>
+        <td>Alimento hipoalergénico</td>
+        <td>Vigentes (05/2025)</td>
+        <td>02/2026</td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+  <main>
+
+    <section class="adecoracion">
+      <f>Registros del Historial Médico</f>
+    </section>
+
+    <section class="bdecoracion">
+    </section>
+    
+  </main>
+
+</body>
+</html> 
